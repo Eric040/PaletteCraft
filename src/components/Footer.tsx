@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="flex flex-col justify-center text-center items-center space-x-1.5">
                     <p className="font-bold">
                         <span>Réalisé par</span> <br />
-                        <span className="text-2xl text-orange-600">Eric Toumoudagou</span>
+                        <span className="text-2xl text-orange-600">Eric TOUMOUDAGOU</span>
                     </p>
                     <p>Copyright {new Date().getFullYear()} - Tout droit reservé</p>
                 </div>

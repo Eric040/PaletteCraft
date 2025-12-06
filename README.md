@@ -1,78 +1,90 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
 # PaletteCraft
 PaletteCraft génère des palettes à partir d’une couleur entrée (HEX ou input color). Modes clair/sombre, jeux complets : complémentaire, analogique, triadique, tétradique, scindée, monochrome, nuances. Copie HEX et historique local de 25 couleurs.
->>>>>>> 8449b56dc764d8bf34dba4dbcb11cd43383d7b18
+
+# 🎨 PaletteCraft
+
+PaletteCraft est une application front-end développée avec **React** et **TailwindCSS**.  
+Elle génère automatiquement plusieurs types de palettes à partir d’une seule couleur fournie par l’utilisateur — via un input HEX ou un sélecteur color.
+
+---
+
+## 🚀 Fonctionnalités
+
+### 🎨 Génération de palettes avancées
+À partir d’une couleur, l’application génère :
+- Palette **Complémentaire**
+- Palette **Analogique**
+- Palette **Triadique**
+- Palette **Tétradique**
+- Palette **Complémentaire scindée**
+- Palette **Monochromatique**
+- Palette **Nuances**
+
+### ⚙️ Entrée utilisateur
+- Saisie manuelle du **code HEX**
+- Sélecteur intuitif via **input type="color"**
+
+### 🌓 Mode Light / Dark
+- Basculer entre les deux thèmes pour un confort visuel optimal.
+
+### 📋 Copie rapide
+- Chaque couleur générée peut être copiée d’un clic.
+
+### 💾 Historique local
+- Sauvegarde automatique des **25 dernières couleurs** entrées.
+- Stockage via **LocalStorage**.
+
+---
+
+## 🧱 Stack technique
+
+- **React + Vite**
+- **TailwindCSS**
+- **LocalStorage** pour la persistance
+- **Color manipulation utils** (personnels)
+
+---
+
+## 📁 Structure du projet
+
+src/
+│── components/
+│ ├── ColorCard.tsx
+│ ├── PaletteGenerator.tsx
+│ ├── Footer.tsx
+│ ├── NavBar.tsx
+│ ├── Theme.tsx
+│── utils/
+│ ├── colorUtils.js
+│ ├── history.js
+│── App.tsx
+│── main.tsx
+│── index.css
+
+
+---
+
+## ▶️ Installation
+
+```bash
+npm install
+npm run dev
+
+
+npm run build
+
+🌍 Déploiement
+
+Compatible avec :
+
+Netlify
+
+Vercel
+
+GitHub Pages
+
+Aucun backend, aucune configuration complexe.
+
+✨ Auteur
+
+Développé par M. Eric TOUMOUDAGOU — passionné de développement web et design UI/UX.
