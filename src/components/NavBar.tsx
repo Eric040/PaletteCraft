@@ -10,7 +10,7 @@ export default function NavBar() {
                 <h1 className="font-bold text-xl md:text-3xl lg:text-4xl">Palette<span className="text-orange-600">Craft</span></h1>
             </div>
             <div className="flex items-center gap-4">
-                <div className="flex bg-gray-200 rounded-full p-1 gap-1">
+                <div className="flex bg-gray-200 dark:bg-gray-600 rounded-full p-1 gap-1">
                     <Sun
                         className={`h-6 w-6 p-1 rounded-full cursor-pointer transition-colors
     ${theme === "light" ? "stroke-orange-600 bg-gray-300 shadow" : ""}
