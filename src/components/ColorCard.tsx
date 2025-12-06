@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ColorCard({ color }) {
+export default function ColorCard({ color }: { color: string }) {
   const [copied, setCopied] = useState(false);
 
   const copyHex = () => {
@@ -10,7 +10,7 @@ export default function ColorCard({ color }) {
   };
 
   return (
-    <div
+    <div 
       className="
         group flex flex-col items-center gap-2 cursor-pointer 
         transition-transform duration-300 
