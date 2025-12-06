@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.card {
+  background-color: var(--card);
+  border-color: var(--border);
+}
