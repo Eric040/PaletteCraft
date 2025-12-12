@@ -1,16 +1,18 @@
 # PaletteCraft
 PaletteCraft génère des palettes à partir d’une couleur entrée (HEX ou input color). Modes clair/sombre, jeux complets : complémentaire, analogique, triadique, tétradique, scindée, monochrome, nuances. Copie HEX et historique local de 25 couleurs.
 
-# 🎨 PaletteCraft
+Live Demo : https://verdant-swan-21fe9e.netlify.app/
+
+# PaletteCraft
 
 PaletteCraft est une application front-end développée avec **React** et **TailwindCSS**.  
 Elle génère automatiquement plusieurs types de palettes à partir d’une seule couleur fournie par l’utilisateur — via un input HEX ou un sélecteur color.
 
 ---
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
-### 🎨 Génération de palettes avancées
+### Génération de palettes avancées
 À partir d’une couleur, l’application génère :
 - Palette **Complémentaire**
 - Palette **Analogique**
