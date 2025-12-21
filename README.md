@@ -49,20 +49,7 @@ Elle génère automatiquement plusieurs types de palettes à partir d’une seul
 
 ## 📁 Structure du projet
 
-src/
-│── components/
-│ ├── ColorCard.tsx
-│ ├── PaletteGenerator.tsx
-│ ├── Footer.tsx
-│ ├── NavBar.tsx
-│ ├── Theme.tsx
-│── utils/
-│ ├── colorUtils.js
-│ ├── history.js
-│── App.tsx
-│── main.tsx
-│── index.css
-
+<img width="1243" height="296" alt="image" src="https://github.com/user-attachments/assets/b8b356f8-c190-4280-bcd1-8ea1a971bb2e" />
 
 ---
 
